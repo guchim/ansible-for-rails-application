@@ -1,6 +1,6 @@
 ---
-- name: Playbook for staging
-  hosts: staging
+- name: Playbook for target_node
+  hosts: target_node
   become: yes
   roles:
     - { role: common, tags: common }
